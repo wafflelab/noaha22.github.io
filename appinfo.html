@@ -1,0 +1,97 @@
+ <title>About</title>
+<link rel="icon" type="image/x-icon" href="/about.png" />
+<style>
+  body {
+    background-color: #001929;
+  }
+  h1 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+  h2 {
+    color: white;
+  }
+</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #747d82;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .sidebar a {
+        display: block;
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a.active {
+        background-color: #6aa3e2;
+        color: white;
+      }
+
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {
+          float: left;
+        }
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a class="active" href="/">Home</a>
+    </div>
+
+    <div class="content">
+      <h2>Info</h2>
+      <p>Android App</p>
+       
+      <p>This is the android app version of the website</p>
+    </div>
+  </body>
+</html>
